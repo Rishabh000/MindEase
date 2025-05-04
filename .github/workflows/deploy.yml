@@ -19,6 +19,7 @@ jobs:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
+        timeout: 60m
         script: |
           cd "/home/ubuntu/MindEase/Sentiment analysis project"
           git pull origin main
