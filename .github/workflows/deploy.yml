@@ -23,7 +23,7 @@ jobs:
         script: |
           cd "/home/ubuntu/MindEase/Sentiment analysis project"
           git pull origin main
-          docker build -t chatbot-app .
           docker stop chatbot || true
           docker rm chatbot || true
+          docker build --no-cache -t chatbot-app .
           docker run -d -p 80:8000 --name chatbot chatbot-app
