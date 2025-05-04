@@ -22,5 +22,7 @@ jobs:
         script: |
           cd "/home/ubuntu/MindEase/Sentiment analysis project"
           git pull origin main
-          docker-compose down
-          docker-compose up --build -d
+          docker build -t chatbot-app .
+          docker stop chatbot || true
+          docker rm chatbot || true
+          docker run -d -p 80:8000 --name chatbot chatbot-app
