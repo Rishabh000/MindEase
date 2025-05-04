@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emotion Chatbot</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    #chat { max-width: 500px; margin: auto; }
+    .user { color: blue; margin: 5px 0; }
+    .bot { color: green; margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <div id="chat">
+    <h2>Emotion Chatbot</h2>
+    <div id="messages"></div>
+    <input id="userInput" placeholder="Type your message..." size="40"/>
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const input = document.getElementById("userInput");
+      const message = input.value;
+      if (!message) return;
+
+      const chatBox = document.getElementById("messages");
+      chatBox.innerHTML += `<div class="user"><strong>You:</strong> ${message}</div>`;
+      input.value = "";
+
+      const res = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await res.json();
+      chatBox.innerHTML += `<div class="bot"><strong>Bot:</strong> ${data.response}</div>`;
+    }
+  </script>
+</body>
+</html>
