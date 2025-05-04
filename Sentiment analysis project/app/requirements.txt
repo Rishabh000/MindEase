@@ -6,8 +6,8 @@ torch==2.1.2
 torchvision==0.16.2
 torchaudio==2.1.2
 transformers==4.36.2
-datasets==2.14.6
-clearml
+#datasets==2.14.6
+#clearml
 accelerate==0.21.0
 fastapi
 uvicorn
