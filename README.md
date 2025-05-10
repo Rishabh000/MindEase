@@ -13,6 +13,7 @@ A lightweight chatbot application that detects user emotions from text using a f
 ☁️ EC2-hosted with public access
 
 🧱 Tech Stack
+
 **Frontend**: HTML, JavaScript (fetch API)
 
 **Backend**: FastAPI, Python
@@ -22,16 +23,25 @@ A lightweight chatbot application that detects user emotions from text using a f
 **Deployment**: Docker, AWS EC2
 
 🔧 Setup Instructions-
+
 1. Clone the Repository:
+   
 git clone https://github.com/Rishabh000/MindEase.git
+
 then use
+
 cd MindEase
+
 3. Build and Run with Docker
+   
 docker build -t chatbot-app .
+
 docker run -d -p 80:8000 --name chatbot chatbot-app
+
 Access at: http://<your-ec2-ip>/
 
 💬 API Endpoints
+
 Method	Endpoint	Description
 GET	/	Loads the chatbot UI
 POST	/chat	Accepts a message and returns emotion-based response
