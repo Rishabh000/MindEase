@@ -25,19 +25,8 @@ Deployment: Docker, AWS EC2
 
 📁 Project Structure
 
-MindEase/
-├── app/
-│   ├── chatbot.py               # FastAPI backend
-│   ├── emotion_model.py         # Emotion prediction logic
-│   ├── index.html               # Frontend chat interface
-│   └── requirements.txt         # Python dependencies
-├── model/
-│   ├── config.json              # Tokenizer + model config
-│   ├── tokenizer_config.json
-│   ├── special_tokens_map.json
-│   └── model.safetensors        # Fine-tuned model weights
-├── Dockerfile                   # Docker build instructions
-└── README.md
+![image](https://github.com/user-attachments/assets/4a996ccf-fffe-4dfe-855b-a21dc776308d)
+
 
 🔧 Setup Instructions
 
@@ -74,9 +63,12 @@ POST /chat
 
 {
   "input": "I'm feeling low today...",
+  
   "emotion": "sadness",
+  
   "response": "😢 I'm here for you. Would you like to talk about what’s making you feel this way?"
 }
 
-**Acknowledgments**
+**Acknowledgments**:
+
 Transformers by Hugging Face, FastAPI, ClearML for training tracking
