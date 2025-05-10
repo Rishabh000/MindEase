@@ -21,22 +21,12 @@ Model: Hugging Face Transformers (DistilBERT)
 
 Deployment: Docker, AWS EC2
 
-📁 Project Structure
-bash
-Copy
-Edit
-
-🔧 Setup Instructions
-1. Clone the Repository
-bash
-Copy
-Edit
+🔧 Setup Instructions-
+1. Clone the Repository:
 git clone https://github.com/Rishabh000/MindEase.git
+then use
 cd MindEase
 3. Build and Run with Docker
-bash
-Copy
-Edit
 docker build -t chatbot-app .
 docker run -d -p 80:8000 --name chatbot chatbot-app
 Access at: http://<your-ec2-ip>/
@@ -48,18 +38,12 @@ POST	/chat	Accepts a message and returns emotion-based response
 
 Example request:
 
-json
-Copy
-Edit
 POST /chat
 {
   "message": "I'm feeling low today..."
 }
-Example response:
 
-json
-Copy
-Edit
+Example response:
 {
   "input": "I'm feeling low today...",
   "emotion": "sadness",
