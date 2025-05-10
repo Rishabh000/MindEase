@@ -1,7 +1,7 @@
 # MindEase: Emotion-Aware Chatbot
 A lightweight chatbot application that detects user emotions from text using a fine-tuned DistilBERT model and generates empathetic responses. Built using FastAPI, deployed via Docker and AWS.
 
-🚀 Features
+🚀 **Features**
 
 🎭 Emotion detection using fine-tuned BERT (DistilBERT) model
 
@@ -13,7 +13,7 @@ A lightweight chatbot application that detects user emotions from text using a f
 
 ☁️ EC2-hosted with public access
 
-🧱 Tech Stack
+🧱 **Tech Stack**
 
 Frontend: HTML, JavaScript (fetch API)
 
@@ -23,12 +23,12 @@ Model: Hugging Face Transformers (DistilBERT)
 
 Deployment: Docker, AWS EC2
 
-📁 Project Structure
+📁 **Project Structure**
 
 ![image](https://github.com/user-attachments/assets/4a996ccf-fffe-4dfe-855b-a21dc776308d)
 
 
-🔧 Setup Instructions
+🔧 **Setup Instructions**
 
 1. Clone the Repository
 
@@ -44,7 +44,7 @@ docker run -d -p 80:8000 --name chatbot chatbot-app
 
 Access at: http://<your-ec2-ip>/
 
-💬 API Endpoints
+💬 **API Endpoints**
 
 Method	Endpoint	Description
 
