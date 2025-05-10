@@ -13,13 +13,13 @@ A lightweight chatbot application that detects user emotions from text using a f
 ☁️ EC2-hosted with public access
 
 🧱 Tech Stack
-Frontend: HTML, JavaScript (fetch API)
+**Frontend**: HTML, JavaScript (fetch API)
 
-Backend: FastAPI, Python
+**Backend**: FastAPI, Python
 
-Model: Hugging Face Transformers (DistilBERT)
+**Model**: Hugging Face Transformers (DistilBERT)
 
-Deployment: Docker, AWS EC2
+**Deployment**: Docker, AWS EC2
 
 🔧 Setup Instructions-
 1. Clone the Repository:
