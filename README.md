@@ -25,19 +25,7 @@ Deployment: Docker, AWS EC2
 bash
 Copy
 Edit
-MindEase/
-├── app/
-│   ├── chatbot.py               # FastAPI backend
-│   ├── emotion_model.py         # Emotion prediction logic
-│   ├── index.html               # Frontend chat interface
-│   └── requirements.txt         # Python dependencies
-├── model/
-│   ├── config.json              # Tokenizer + model config
-│   ├── tokenizer_config.json
-│   ├── special_tokens_map.json
-│   └── model.safetensors        # Fine-tuned model weights
-├── Dockerfile                   # Docker build instructions
-└── README.md
+
 🔧 Setup Instructions
 1. Clone the Repository
 bash
@@ -45,7 +33,7 @@ Copy
 Edit
 git clone https://github.com/Rishabh000/MindEase.git
 cd MindEase
-2. Build and Run with Docker
+3. Build and Run with Docker
 bash
 Copy
 Edit
